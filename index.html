@@ -105,13 +105,6 @@
     }
 }
  
-@for $i from 1 through 8 {
-    .flashing-letters {
-        span:nth-child(#{$i}) {
-            animation-delay: ($i - 1)*0.2s;
-        }
-    }
-
     </style>
 <link type="text/css" rel="stylesheet" charset="UTF-8" href="./assets/m=el_main_css"></head>
 <body class="antialiased" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
@@ -143,7 +136,7 @@
         <div class="gradient-overlay w-full min-h-screen flex items-center">
             <div class="container mx-auto px-4 py-20">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div class="text-center lg:text-left aos-init aos-animate" data-aos="fade-right">
+                    <div class="text-center lg:text-left" data-aos="fade-right">
                         <h1 class="text-5xl lg:text-6xl font-bold mb-8 text-white leading-tight"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">
                             Professional TikTok </font></font><br><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Operation System
                         </font></font></h1>
@@ -158,7 +151,7 @@
                             </font></font></a>
                         </div>
                     </div>
-                    <div class="hidden lg:block aos-init aos-animate" data-aos="fade-left">
+                    <div class="hidden lg:block" data-aos="fade-left">
                         <img src="./assets/dashboard.png" alt="TikTok operating system interface" class="rounded-lg shadow-2xl transform hover:scale-105 transition duration-500">
                     </div>
                 </div>
@@ -169,7 +162,7 @@
     <!-- 数据统计 -->
     <div class="bg-white py-20 -mt-20 relative z-10 rounded-t-3xl shadow-lg">
         <div class="container mx-auto px-4">
-                       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 aos-init aos-animate" data-aos="fade-up">
+                       <div class="grid grid-cols-2 md:grid-cols-4 gap-8" data-aos="fade-up">
                 <div class="text-center p-8 rounded-xl bg-pink-50">
                     <div class="text-5xl font-bold text-pink-500 mb-2"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">5 million+</font></font></div>
                     <div class="text-gray-600"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Cumulative increase in followers</font></font></div>
@@ -196,7 +189,7 @@
             <h2 class="text-3xl font-bold text-center mb-16 text-gray-800"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">TikTok's core operating functions</font></font></h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <!-- 功能1 -->
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 feature-card aos-init aos-animate" data-aos="fade-up">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 feature-card" data-aos="fade-up">
                     <div class="text-pink-500 mb-4">
                         <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
@@ -212,7 +205,7 @@
                 </div>
 
                 <!-- 功能2 -->
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 feature-card aos-init aos-animate" data-aos="fade-up">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 feature-card" data-aos="fade-up">
                     <div class="text-pink-500 mb-4">
                         <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
@@ -228,7 +221,7 @@
                 </div>
 
                 <!-- 功能3 -->
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 feature-card aos-init aos-animate" data-aos="fade-up">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 feature-card" data-aos="fade-up">
                     <div class="text-pink-500 mb-4">
                         <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
@@ -254,7 +247,7 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- 案例1：美妆品牌 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 aos-init aos-animate" data-aos="fade-up">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300" data-aos="fade-up">
                     <div class="relative">
                         <img src="./assets/meizhuang.png" alt="Beauty Brand Case" class="w-full h-48 object-cover">
                         <div class="absolute top-4 right-4 bg-pink-500 text-white px-3 py-1 rounded-full text-sm"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">
@@ -273,7 +266,7 @@
                 </div>
 
                 <!-- 案例2：餐饮品牌 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300" data-aos="fade-up" data-aos-delay="100">
                     <div class="relative">
                         <img src="./assets/meizhuang.png" alt="Catering brand case" class="w-full h-48 object-cover">
                         <div class="absolute top-4 right-4 bg-yellow-500 text-white px-3 py-1 rounded-full text-sm"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">
@@ -292,7 +285,7 @@
                 </div>
 
                 <!-- 案例3：教育机构 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300" data-aos="fade-up" data-aos-delay="200">
                     <div class="relative">
                         <img src="./assets/meizhuang.png" alt="Educational institution case" class="w-full h-48 object-cover">
                         <div class="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">
@@ -311,7 +304,7 @@
                 </div>
 
                 <!-- 案例4：个人IP -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 aos-init aos-animate" data-aos="fade-up">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300" data-aos="fade-up">
                     <div class="relative">
                         <img src="./assets/meizhuang.png" alt="Personal IP Case" class="w-full h-48 object-cover">
                         <div class="absolute top-4 right-4 bg-purple-500 text-white px-3 py-1 rounded-full text-sm"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">
@@ -330,7 +323,7 @@
                 </div>
 
                 <!-- 案例5：电商品牌 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300" data-aos="fade-up" data-aos-delay="100">
                     <div class="relative">
                         <img src="./assets/meizhuang.png" alt="E-commerce brand case" class="w-full h-48 object-cover">
                         <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">
@@ -349,7 +342,7 @@
                 </div>
 
                 <!-- 案例6：音乐艺人 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300" data-aos="fade-up" data-aos-delay="200">
                     <div class="relative">
                         <img src="./assets/meizhuang.png" alt="Music Artist Case" class="w-full h-48 object-cover">
                         <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">
@@ -385,7 +378,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- 商业IP孵化 -->
-            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300 aos-init aos-animate" data-aos="fade-up">
+            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300" data-aos="fade-up">
                 <div class="text-pink-500 mb-4">
                     <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
@@ -404,7 +397,7 @@
             </div>
 
             <!-- 店铺一站式代运营 -->
-            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300" data-aos="fade-up" data-aos-delay="100">
                 <div class="text-blue-500 mb-4">
                     <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
@@ -423,7 +416,7 @@
             </div>
 
             <!-- 直播间带货 -->
-            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300" data-aos="fade-up" data-aos-delay="200">
                 <div class="text-purple-500 mb-4">
                     <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
@@ -442,7 +435,7 @@
             </div>
 
             <!-- 短视频创作 -->
-            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+            <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300" data-aos="fade-up" data-aos-delay="300">
                 <div class="text-green-500 mb-4">
                     <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path>
@@ -465,22 +458,22 @@
         <div class="mt-20">
             <h3 class="text-2xl font-bold text-center mb-12"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">TikTok agency operation service process</font></font></h3>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="text-center aos-init aos-animate" data-aos="fade-right" data-aos-delay="0">
+                <div class="text-center" data-aos="fade-right" data-aos-delay="0">
                     <div class="w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">1</font></font></div>
                     <h4 class="font-semibold mb-2"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Demand Communication</font></font></h4>
                     <p class="text-gray-600"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Deep understanding of your brand and goals</font></font></p>
                 </div>
-                <div class="text-center aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                <div class="text-center" data-aos="fade-right" data-aos-delay="100">
                     <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">2</font></font></div>
                     <h4 class="font-semibold mb-2"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Program Development</font></font></h4>
                     <p class="text-gray-600"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Customized exclusive operation strategy</font></font></p>
                 </div>
-                <div class="text-center aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
+                <div class="text-center" data-aos="fade-right" data-aos-delay="200">
                     <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">3</font></font></div>
                     <h4 class="font-semibold mb-2"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Execution Optimization</font></font></h4>
                     <p class="text-gray-600"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Professional team full execution</font></font></p>
                 </div>
-                <div class="text-center aos-init aos-animate" data-aos="fade-right" data-aos-delay="300">
+                <div class="text-center" data-aos="fade-right" data-aos-delay="300">
                     <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">4</font></font></div>
                     <h4 class="font-semibold mb-2"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Results tracking</font></font></h4>
                     <p class="text-gray-600"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Continuous optimization of data analysis</font></font></p>
@@ -620,7 +613,7 @@ li { list-style: none; }
     </div>
 
     <!-- AOS动画库 -->
-    <script src="./assets/aos.js.download"></script>
+    <script src="./assets/aos.js"></script>
     <script>
         AOS.init({
             duration: 1000,
